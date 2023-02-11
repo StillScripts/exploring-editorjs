@@ -1,6 +1,7 @@
+import type { ComponentProps } from "react"
 import { Button, Card } from "ui"
 
-const CARD_CONTENT = [
+const CARD_CONTENT: ComponentProps<typeof Card>[] = [
   {
     title: "Caching Tasks",
     href: "https://turbo.build/repo/docs/core-concepts/caching",
