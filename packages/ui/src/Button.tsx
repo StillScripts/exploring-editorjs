@@ -8,5 +8,5 @@ export const Button = () => {
         </div>
       </a>
     </div>
-  );
-};
+  )
+}

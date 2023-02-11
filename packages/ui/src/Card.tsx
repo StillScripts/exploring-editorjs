@@ -3,9 +3,9 @@ export const Card = ({
   cta,
   href,
 }: {
-  title: string;
-  cta: string;
-  href: string;
+  title: string
+  cta: string
+  href: string
 }) => {
   return (
     <a
@@ -21,5 +21,5 @@ export const Card = ({
         </div>
       </div>
     </a>
-  );
-};
+  )
+}
