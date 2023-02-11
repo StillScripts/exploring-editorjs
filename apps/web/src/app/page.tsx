@@ -1,5 +1,7 @@
 import { Button, Card } from "ui";
 
+const hey: any = 2;
+
 const CARD_CONTENT = [
   {
     title: "Caching Tasks",

@@ -4,6 +4,7 @@
 
 const config = {
   reactStrictMode: true,
+  transpilePackages: ["ui"],
   experimental: {
     appDir: true,
   },
