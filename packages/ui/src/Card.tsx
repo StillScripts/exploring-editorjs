@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export const Card = ({
   title,
   cta,
@@ -14,7 +12,7 @@ export const Card = ({
       target="_blank"
       rel="noopener noreferrer"
       href={href}
-      className="ui-group ui-mt-4 ui-rounded-lg ui-border ui-border-transparent ui-overflow-hidden ui-bg-origin-border ui-bg-gradient-to-r ui-from-secondary ui-to-primary ui-text-[#6b7280]"
+      className="ui-group ui-mt-4 ui-rounded-lg ui-border ui-border-transparent ui-overflow-hidden ui-bg-origin-border ui-bg-gradient-to-r ui-from-secondary ui-to-primary ui-text-red-100"
     >
       <div className="ui-p-4 ui-bg-zinc-900 ui-h-full">
         <p className="ui-inline-block ui-text-xl ui-text-white">{title}</p>

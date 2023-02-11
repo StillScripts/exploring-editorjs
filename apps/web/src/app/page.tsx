@@ -1,6 +1,4 @@
-import { Button, Card } from "ui";
-
-const hey: any = 2;
+import { Button, Card } from "ui"
 
 const CARD_CONTENT = [
   {
@@ -18,7 +16,7 @@ const CARD_CONTENT = [
     href: "https://turbo.build/repo/docs/reference/configuration",
     cta: "Read More",
   },
-];
+]
 
 export default async function Home() {
   return (
@@ -26,7 +24,7 @@ export default async function Home() {
       <main className="mx-auto w-auto px-4 pt-16 pb-8 sm:pt-24 lg:px-8">
         <h1 className="mx-auto text-center text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl xl:text-8xl">
           Web
-          <span className="block bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent px-2">
+          <span className="from-secondary to-primary block bg-gradient-to-r bg-clip-text px-2 text-transparent">
             Turborepo Example
           </span>
         </h1>
@@ -34,12 +32,12 @@ export default async function Home() {
           <Button />
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 place-content-evenly">
+        <div className="mt-12 grid grid-cols-1 place-content-evenly gap-4 sm:grid-cols-3">
           {CARD_CONTENT.map((card) => (
             <Card key={card.title} {...card} />
           ))}
         </div>
       </main>
     </div>
-  );
+  )
 }
