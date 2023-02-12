@@ -13,7 +13,11 @@ export default async function Page({ params }: PageProps) {
   if (!category) return null
 
   return (
-    <Boundary labels={["Page [Server Component]"]} animateRerendering={false}>
+    <Boundary
+      labels={["Page [Server Component]"]}
+      color="orange"
+      animateRerendering={false}
+    >
       <div className="space-y-8">
         <h1 className="text-xl font-medium text-gray-400/80">
           {category.name}

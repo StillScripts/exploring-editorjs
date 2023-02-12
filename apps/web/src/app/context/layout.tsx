@@ -12,10 +12,9 @@ export default async function Layout({
 }) {
   const categories = await fetchCategories()
 
-  const tabs = [
+  const tabs: { text: string; slug?: string }[] = [
     {
       text: "Home",
-      slug: "/",
     },
     ...categories.map((x) => ({
       text: x.name,
@@ -29,19 +28,21 @@ export default async function Layout({
     <div className="p-12">
       <Boundary
         labels={["Server Component Boundary"]}
-        size="small"
+        color="orange"
+        size="default"
         animateRerendering={false}
       >
         <Boundary
           labels={["Counter Context Provider [Client Component]"]}
           color="blue"
-          size="small"
+          size="default"
           animateRerendering={false}
         >
           <CounterProvider>
             <Boundary
               labels={["Server Component Boundary"]}
-              size="small"
+              color="orange"
+              size="default"
               animateRerendering={false}
             >
               <div className="space-y-9">

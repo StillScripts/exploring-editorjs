@@ -7,10 +7,9 @@ export default async function Layout({ children, params }: PageProps) {
   const category = await fetchCategoryBySlug(params.categorySlug)
   if (!category) return null
 
-  const tabs = [
+  const tabs: { text: string; slug?: string }[] = [
     {
       text: "All",
-      slug: "/",
     },
     ...category.items.map((x) => ({
       text: x.name,
@@ -21,7 +20,11 @@ export default async function Layout({ children, params }: PageProps) {
   const path = `/context/${category.slug}`
 
   return (
-    <Boundary labels={["Layout [Server Component]"]} animateRerendering={false}>
+    <Boundary
+      labels={["Layout [Server Component]"]}
+      color="orange"
+      animateRerendering={false}
+    >
       <div className="space-y-9">
         <div className="flex flex-wrap items-center gap-2">
           {tabs.map((tab) => (
