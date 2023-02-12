@@ -18,11 +18,14 @@ export const Tab = ({ path, item }: { path: string; item: Item }) => {
   return (
     <a
       href={href}
-      className={clsx("rounded-lg px-3 py-1 text-sm font-medium", {
-        "bg-gray-700 text-gray-100 hover:bg-gray-500 hover:text-white":
-          !isActive,
-        "bg-vercel-blue text-white": isActive,
-      })}
+      className={clsx(
+        "ui-rounded-lg ui-px-3 ui-py-1 ui-text-sm ui-font-medium",
+        {
+          "ui-bg-gray-700 ui-text-gray-100 ui-hover:bg-gray-500 ui-hover:text-white":
+            !isActive,
+          "ui-bg-vercel-blue ui-text-white": isActive,
+        }
+      )}
     >
       {item.text}
     </a>

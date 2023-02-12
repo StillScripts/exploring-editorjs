@@ -1,7 +1,6 @@
 "use client"
 
 import { useCounter } from "./CounterContext"
-import React from "react"
 import { Boundary } from "ui"
 
 const ContextClickCounter = () => {
@@ -16,7 +15,6 @@ const ContextClickCounter = () => {
     >
       <button
         onClick={() => {
-          alert("Hey")
           setCount(count + 1)
         }}
         className="rounded-lg bg-gray-700 px-3 py-1 text-sm font-medium tabular-nums text-gray-100 hover:bg-gray-500 hover:text-white"
