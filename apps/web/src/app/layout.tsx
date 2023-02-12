@@ -3,7 +3,11 @@ import "../styles/globals.css"
 import "ui/styles.css"
 
 const Layout = async ({ children }: { children: React.ReactNode }) => (
-  <div className="bg-zinc-900">{children}</div>
+  <html>
+    <body>
+      <div className="bg-zinc-900">{children}</div>
+    </body>
+  </html>
 )
 
 export default Layout

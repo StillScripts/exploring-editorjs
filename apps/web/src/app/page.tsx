@@ -1,5 +1,5 @@
 import type { ComponentProps } from "react"
-import { Button, Card } from "ui"
+import { Card } from "ui"
 
 const CARD_CONTENT: ComponentProps<typeof Card>[] = [
   {
@@ -29,10 +29,6 @@ export default async function Home() {
             Turborepo Example
           </span>
         </h1>
-        <div className="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8">
-          <Button />
-        </div>
-
         <div className="mt-12 grid grid-cols-1 place-content-evenly gap-4 sm:grid-cols-3">
           {CARD_CONTENT.map((card) => (
             <Card key={card.title} {...card} />

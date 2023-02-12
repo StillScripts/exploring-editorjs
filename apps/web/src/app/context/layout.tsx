@@ -1,5 +1,5 @@
 import { fetchCategories } from "../../utils/getCategories"
-import { Boundary } from "ui"
+import { Boundary, TabGroup } from "ui"
 import { CounterProvider } from "./CounterContext"
 import React from "react"
 import ContextClickCounter from "./ContextClickCounter"

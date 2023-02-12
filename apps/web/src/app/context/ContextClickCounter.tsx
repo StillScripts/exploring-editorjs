@@ -1,35 +1,38 @@
-'use client';
+"use client"
 
-import { useCounter } from './CounterContext';
-import React from 'react';
-import { Boundary } from '#/ui/Boundary';
+import { useCounter } from "./CounterContext"
+import React from "react"
+import { Boundary } from "ui"
 
 const ContextClickCounter = () => {
-  const [count, setCount] = useCounter();
+  const [count, setCount] = useCounter()
 
   return (
     <Boundary
-      labels={['Counter Context [Client Component]']}
+      labels={["Counter Context [Client Component]"]}
       color="blue"
       size="small"
       animateRerendering={false}
     >
       <button
-        onClick={() => setCount(count + 1)}
+        onClick={() => {
+          alert("Hey")
+          setCount(count + 1)
+        }}
         className="rounded-lg bg-gray-700 px-3 py-1 text-sm font-medium tabular-nums text-gray-100 hover:bg-gray-500 hover:text-white"
       >
         {count} Clicks
       </button>
     </Boundary>
-  );
-};
+  )
+}
 
 export const Counter = () => {
-  const [count] = useCounter();
+  const [count] = useCounter()
 
   return (
     <Boundary
-      labels={['Counter Context [Client Component]']}
+      labels={["Counter Context [Client Component]"]}
       color="blue"
       size="small"
       animateRerendering={false}
@@ -38,7 +41,7 @@ export const Counter = () => {
         <span className="tabular-nums">{count}</span> Clicks
       </div>
     </Boundary>
-  );
-};
+  )
+}
 
-export default ContextClickCounter;
+export default ContextClickCounter
