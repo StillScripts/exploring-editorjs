@@ -2,7 +2,7 @@
 
 import type { Item } from "./TabGroup"
 import clsx from "clsx"
-// import Link from "next/link"
+import Link from "next/link"
 // import { useSelectedLayoutSegment } from "next/navigation"
 
 export const Tab = ({ path, item }: { path: string; item: Item }) => {
@@ -16,7 +16,7 @@ export const Tab = ({ path, item }: { path: string; item: Item }) => {
   //   segment === item.slug
 
   return (
-    <a
+    <Link
       href={href}
       className={clsx(
         "ui-rounded-lg ui-px-3 ui-py-1 ui-text-sm ui-font-medium",
@@ -28,6 +28,6 @@ export const Tab = ({ path, item }: { path: string; item: Item }) => {
       )}
     >
       {item.text}
-    </a>
+    </Link>
   )
 }

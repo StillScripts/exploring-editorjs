@@ -1,5 +1,6 @@
 import { fetchCategories } from "../../utils/getCategories"
-import { Boundary, TabGroup } from "mui"
+import { Boundary } from "ui"
+import { TabGroup } from "mui"
 //import { TabGroup } from "nui"
 import { CounterProvider } from "./CounterContext"
 import React from "react"
