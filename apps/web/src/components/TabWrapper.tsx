@@ -2,7 +2,7 @@
 
 import { Item } from "@/utils/getCategories"
 import { useSelectedLayoutSegment } from "next/navigation"
-import { Tab } from "mui"
+import { Tab } from "nui"
 
 export const TabWrapper = ({ path, item }: { path: string; item: Item }) => {
   const segment = useSelectedLayoutSegment()

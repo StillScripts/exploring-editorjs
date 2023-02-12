@@ -1,7 +1,7 @@
 import "../styles/globals.css"
 // include styles from the ui packages
 import "ui/styles.css"
-import "mui/styles.css"
+import "nui/styles.css"
 
 const Layout = async ({ children }: { children: React.ReactNode }) => (
   <html>
