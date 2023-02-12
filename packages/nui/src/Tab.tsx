@@ -2,21 +2,21 @@
 
 import type { Item } from "./TabGroup"
 import clsx from "clsx"
-import Link from "next/link"
-import { useSelectedLayoutSegment } from "next/navigation"
+//import Link from "next/link"
+//import { useSelectedLayoutSegment } from "next/navigation"
 
 export const Tab = ({ path, item }: { path: string; item: Item }) => {
-  const segment = useSelectedLayoutSegment()
+  //const segment = useSelectedLayoutSegment()
   const href = item.slug ? path + "/" + item.slug : path
-  const isActive =
-    // Example home pages e.g. `/layouts`
-    (!item.slug && segment === null) ||
-    segment === item.segment ||
-    // Nested pages e.g. `/layouts/electronics`
-    segment === item.slug
+  const isActive = false
+  // Example home pages e.g. `/layouts`
+  // (!item.slug && segment === null) ||
+  // segment === item.segment ||
+  // // Nested pages e.g. `/layouts/electronics`
+  // segment === item.slug
 
   return (
-    <Link
+    <a
       href={href}
       className={clsx(
         "nui-rounded-lg nui-px-3 nui-py-1 nui-text-sm nui-font-medium",
@@ -28,6 +28,6 @@ export const Tab = ({ path, item }: { path: string; item: Item }) => {
       )}
     >
       {item.text}
-    </Link>
+    </a>
   )
 }
