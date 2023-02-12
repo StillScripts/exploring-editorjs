@@ -1,9 +1,12 @@
 "use client"
 
-import type { Item } from "./TabGroup"
 import clsx from "clsx"
-//import Link from "next/link"
-//import { useSelectedLayoutSegment } from "next/navigation"
+
+type Item = {
+  text: string
+  slug?: string
+  segment?: string
+}
 
 export const Tab = ({
   path,

@@ -1,8 +1,8 @@
-import { fetchCategories } from "@/utils/getCategories"
 import { Boundary } from "ui"
-import { CounterProvider } from "./CounterContext"
 import React from "react"
-import ContextClickCounter from "./ContextClickCounter"
+import { fetchCategories } from "@/utils/getCategories"
+import { CounterProvider } from "@/components/CounterContext"
+import ContextClickCounter from "@/components/ContextClickCounter"
 import { TabWrapper } from "@/components/TabWrapper"
 
 export default async function Layout({

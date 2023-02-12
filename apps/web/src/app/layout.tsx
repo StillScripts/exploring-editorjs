@@ -5,8 +5,8 @@ import "mui/styles.css"
 
 const Layout = async ({ children }: { children: React.ReactNode }) => (
   <html>
-    <body>
-      <div className="bg-zinc-900">{children}</div>
+    <body className="min-h-full">
+      <div className="min-h-screen bg-zinc-900">{children}</div>
     </body>
   </html>
 )

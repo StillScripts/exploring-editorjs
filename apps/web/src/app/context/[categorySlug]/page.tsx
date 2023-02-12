@@ -1,6 +1,6 @@
 import { fetchCategoryBySlug, PageProps } from "../../../utils/getCategories"
 import { Boundary } from "ui"
-import { Counter } from "../ContextClickCounter"
+import { Counter } from "@/components/ContextClickCounter"
 
 export default async function Page({ params }: PageProps) {
   const category = await fetchCategoryBySlug(params.categorySlug)
