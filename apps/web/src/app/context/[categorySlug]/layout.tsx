@@ -1,7 +1,7 @@
-import { fetchCategoryBySlug, PageProps } from "#/utils/getCategories"
+import { fetchCategoryBySlug, PageProps } from "@/utils/getCategories"
 import { Boundary } from "ui"
 import { Counter } from "../ContextClickCounter"
-import { TabWrapper } from "#/components/TabWrapper"
+import { TabWrapper } from "@/components/TabWrapper"
 
 export default async function Layout({ children, params }: PageProps) {
   const category = await fetchCategoryBySlug(params.categorySlug)

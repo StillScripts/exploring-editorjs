@@ -3,7 +3,7 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "compilerOptions": {
     "paths": {
-      "#/*": ["./src/*"]
+      "@/*": ["./src/*"]
     },
     "plugins": [
       {

@@ -1,9 +1,9 @@
-import { fetchCategories } from "#/utils/getCategories"
+import { fetchCategories } from "@/utils/getCategories"
 import { Boundary } from "ui"
 import { CounterProvider } from "./CounterContext"
 import React from "react"
 import ContextClickCounter from "./ContextClickCounter"
-import { TabWrapper } from "#/components/TabWrapper"
+import { TabWrapper } from "@/components/TabWrapper"
 
 export default async function Layout({
   children,
