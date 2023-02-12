@@ -1,5 +1,6 @@
 import { fetchCategoryBySlug, PageProps } from "../../../utils/getCategories"
-import { Boundary, TabGroup } from "ui"
+import { Boundary } from "ui"
+import { TabGroup } from "mui"
 import { Counter } from "../ContextClickCounter"
 
 export default async function Layout({ children, params }: PageProps) {
