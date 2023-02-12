@@ -5,10 +5,18 @@ import clsx from "clsx"
 import Link from "next/link"
 // import { useSelectedLayoutSegment } from "next/navigation"
 
-export const Tab = ({ path, item }: { path: string; item: Item }) => {
+export const Tab = ({
+  path,
+  item,
+  isActive = false,
+}: {
+  path: string
+  item: Item
+  isActive?: boolean
+}) => {
   //const segment = useSelectedLayoutSegment()
   const href = item.slug ? path + "/" + item.slug : path
-  const isActive = false
+  //const isActive = false
   //   // Example home pages e.g. `/layouts`
   //   (!item.slug && segment === null) ||
   //   segment === item.segment ||
