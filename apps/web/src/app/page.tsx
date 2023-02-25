@@ -19,15 +19,33 @@ const CARD_CONTENT: ComponentProps<typeof Card>[] = [
   },
 ]
 
+async function getData() {
+  const response = await fetch(
+    "https://api.jsonbin.io/v3/b/63fa0fc4ace6f33a22e548b1/latest",
+    {
+      headers: {
+        // Hardcoded, must remove
+        "X-Master-Key": "",
+      },
+    }
+  )
+  if (!response.ok) {
+    throw new Error("Failed to fetch data")
+  }
+  return response.json()
+}
+
 export default async function Home() {
+  const data = await getData()
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <main className="mx-auto w-auto px-4 pt-16 pb-8 sm:pt-24 lg:px-8">
-        <h1 className="mx-auto text-center text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl xl:text-8xl">
+        <h1 className="mx-auto text-center text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
           <span className="from-secondary to-primary block bg-gradient-to-r bg-clip-text px-2 uppercase text-transparent">
             Page Designed by Editor.js
           </span>
         </h1>
+        <p className="text-white">{data?.record?.answer}</p>
         <div className="mt-12 grid grid-cols-1 place-content-evenly gap-4 sm:grid-cols-3">
           {CARD_CONTENT.map((card) => (
             <Card key={card.title} {...card} />
