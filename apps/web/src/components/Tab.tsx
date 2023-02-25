@@ -22,14 +22,11 @@ export const Tab = ({
   return (
     <Link
       href={href}
-      className={clsx(
-        "nui-rounded-lg nui-px-3 nui-py-1 nui-text-sm nui-font-medium",
-        {
-          "nui-bg-gray-700 nui-text-gray-100 nui-hover:bg-gray-500 nui-hover:text-white":
-            !isActive,
-          "nui-bg-vercel-pink nui-text-white": isActive,
-        }
-      )}
+      className={clsx("rounded-lg px-3 py-1 text-sm font-medium", {
+        "bg-gray-700 text-gray-100 hover:bg-gray-500 hover:text-white":
+          !isActive,
+        "bg-vercel-pink text-white": isActive,
+      })}
     >
       {item.text}
     </Link>
