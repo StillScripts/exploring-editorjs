@@ -15,5 +15,14 @@
     "clean": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "CI",
+    "X_MASTER_KEY",
+    "JSONBIN_ID",
+    "NODE_ENV",
+    "SKIP_ENV_VALIDATION",
+    "VERCEL",
+    "VERCEL_URL"
+  ]
 }

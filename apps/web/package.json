@@ -3,23 +3,26 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "pnpm with-env next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "clsx": "^1.2.1",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "zod": "^3.20.6"
   },
   "devDependencies": {
     "@types/node": "^18.11.17",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "autoprefixer": "^10.4.13",
+    "dotenv-cli": "^7.0.0",
     "eslint-config-custom": "workspace:*",
     "postcss": "^8.4.20",
     "tailwind-config": "workspace:*",

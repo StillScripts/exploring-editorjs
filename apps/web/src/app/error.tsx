@@ -15,9 +15,12 @@ export default function Error({
   }, [error])
 
   return (
-    <div>
-      <h2>Something went wrong when fetching data!</h2>
+    <div className="w-full bg-white p-8 py-16 text-center">
+      <h2 className="my-4 text-lg font-bold text-red-500">
+        Something went wrong when fetching data!
+      </h2>
       <button
+        className="bg-green-700 px-4 py-2 text-white"
         onClick={
           // Attempt to recover by trying to re-render the segment
           () => reset()

@@ -1,5 +1,6 @@
 import type { ComponentProps } from "react"
 import { Card } from "ui"
+import { env } from "../env.mjs"
 
 const CARD_CONTENT: ComponentProps<typeof Card>[] = [
   {
@@ -20,12 +21,13 @@ const CARD_CONTENT: ComponentProps<typeof Card>[] = [
 ]
 
 async function getData() {
+  const hey = env.X_MASTER_KEY
+  console.log(hey)
   const response = await fetch(
-    "https://api.jsonbin.io/v3/b/63fa0fc4ace6f33a22e548b1/latest",
+    `https://api.jsonbin.io/v3/b/${env.JSONBIN_ID}/latest`,
     {
       headers: {
-        // Hardcoded, must remove
-        "X-Master-Key": "",
+        "X-Master-Key": env.X_MASTER_KEY,
       },
     }
   )
