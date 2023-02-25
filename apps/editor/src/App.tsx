@@ -1,7 +1,9 @@
-import "./App.css"
-
 function App() {
-  return <h1>React</h1>
+  return (
+    <p className="uppercase text-blue-500">
+      React App <i>(may or may not be useful)</i>
+    </p>
+  )
 }
 
 export default App

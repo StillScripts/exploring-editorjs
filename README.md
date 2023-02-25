@@ -42,13 +42,16 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
-## Using this example
+## More detailed Docs
 
-Run the following command:
+Exploring Editor.js
 
-```sh
-npx degit vercel/turbo/examples/with-tailwind with-tailwind
-cd with-tailwind
-pnpm install
-git init . && git add . && git commit -m "Init"
-```
+Welcome to this Vite app exploring modifications to Editor.js. The following packages are used: 
+
+- `apps/web` A Next.js 13 website which renders the Editor.js blocks
+- `apps/editor` - A Vite app which runs Editor.js
+- `packages/ui` - React UI components
+- `packages/tsconfig` - TypeScript config for development
+- `packages/eslint-config-custom` - ESLint config for development
+- `packages/tailwind-config` - TailwindCSS config for styling the project
+- 
