@@ -29,12 +29,14 @@ importers:
       '@vitejs/plugin-react-swc': ^3.0.0
       autoprefixer: ^10.4.13
       dotenv-cli: ^7.0.0
+      editor-plugin: workspace:*
       eslint-config-custom: workspace:*
       postcss: ^8.4.20
       react: ^18.2.0
       react-dom: ^18.2.0
       tailwindcss: ^3.2.4
       typescript: ^4.9.3
+      ui: workspace:*
       vite: ^4.1.0
     dependencies:
       '@editorjs/editorjs': 2.26.5
@@ -42,8 +44,10 @@ importers:
       '@editorjs/list': 1.8.0
       '@editorjs/paragraph': 2.9.0
       '@editorjs/quote': 2.5.0
+      editor-plugin: link:../../packages/editor-plugin
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      ui: link:../../packages/ui
     devDependencies:
       '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
       '@types/react': 18.0.28
@@ -65,6 +69,7 @@ importers:
       autoprefixer: ^10.4.13
       clsx: ^1.2.1
       dotenv-cli: ^7.0.0
+      editor-plugin: workspace:*
       eslint-config-custom: workspace:*
       next: latest
       postcss: ^8.4.20
@@ -78,6 +83,7 @@ importers:
       zod: ^3.20.6
     dependencies:
       clsx: 1.2.1
+      editor-plugin: link:../../packages/editor-plugin
       next: 13.2.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -94,6 +100,33 @@ importers:
       tailwind-config: link:../../packages/tailwind-config
       tailwindcss: 3.2.4_postcss@8.4.20
       tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.4
+
+  packages/editor-plugin:
+    specifiers:
+      '@editorjs/editorjs': ^2.26.5
+      '@types/react': ^18.0.26
+      clsx: ^1.2.1
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      postcss: ^8.4.20
+      react: ^18.2.0
+      tailwind-config: workspace:*
+      tsconfig: workspace:*
+      tsup: ^6.1.3
+      typescript: ^4.9.4
+    dependencies:
+      '@editorjs/editorjs': 2.26.5
+      clsx: 1.2.1
+    devDependencies:
+      '@types/react': 18.0.28
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      postcss: 8.4.21
+      react: 18.2.0
+      tailwind-config: link:../tailwind-config
+      tsconfig: link:../tsconfig
+      tsup: 6.5.0_k22f457wtryv7dv7ltdlwpdpdm
       typescript: 4.9.4
 
   packages/eslint-config-custom:
@@ -3655,6 +3688,43 @@ packages:
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: false
+
+  /tsup/6.5.0_k22f457wtryv7dv7ltdlwpdpdm:
+    resolution: {integrity: sha512-36u82r7rYqRHFkD15R20Cd4ercPkbYmuvRkz3Q1LCm5BsiFNUgpo36zbjVhCOgvjyxNBWNKHsaD5Rl8SykfzNA==}
+    engines: {node: '>=14'}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': ^1
+      postcss: ^8.4.12
+      typescript: ^4.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      postcss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      bundle-require: 3.1.2_esbuild@0.15.15
+      cac: 6.7.14
+      chokidar: 3.5.3
+      debug: 4.3.4
+      esbuild: 0.15.15
+      execa: 5.1.1
+      globby: 11.1.0
+      joycon: 3.1.1
+      postcss: 8.4.21
+      postcss-load-config: 3.1.4_postcss@8.4.21
+      resolve-from: 5.0.0
+      rollup: 3.17.2
+      source-map: 0.8.0-beta.0
+      sucrase: 3.29.0
+      tree-kill: 1.2.2
+      typescript: 4.9.4
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: true
 
   /tsup/6.5.0_rjjztofv3neoollaos63msgx3q:
     resolution: {integrity: sha512-36u82r7rYqRHFkD15R20Cd4ercPkbYmuvRkz3Q1LCm5BsiFNUgpo36zbjVhCOgvjyxNBWNKHsaD5Rl8SykfzNA==}
