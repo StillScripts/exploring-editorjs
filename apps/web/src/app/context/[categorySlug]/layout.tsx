@@ -3,7 +3,10 @@ import { Boundary } from "ui"
 import { Counter } from "@/components/ContextClickCounter"
 import { TabWrapper } from "@/components/TabWrapper"
 
-export default async function Layout({ children, params }: PageProps) {
+export default async function Layout({
+  children,
+  params,
+}: PageProps & { children: React.ReactNode }) {
   const category = await fetchCategoryBySlug(params.categorySlug)
   if (!category) return null
 

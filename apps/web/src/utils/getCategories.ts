@@ -9,7 +9,6 @@ export type Item = {
 export type PageProps = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   params?: any
-  children?: React.ReactNode
 }
 export type Category = {
   name: string

@@ -1,5 +1,5 @@
-import { fetchCategoryBySlug, PageProps } from "../../../utils/getCategories"
 import { Boundary } from "ui"
+import { fetchCategoryBySlug, PageProps } from "@/utils/getCategories"
 import { Counter } from "@/components/ContextClickCounter"
 
 export default async function Page({ params }: PageProps) {
