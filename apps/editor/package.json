@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm with-env vite",
-    "build": "tsc && vite build",
+    "build": "tsc && pnpm with-env vite build",
     "preview": "vite preview",
     "with-env": "dotenv -e ../../.env --"
   },

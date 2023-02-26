@@ -50,6 +50,7 @@ Welcome to this Vite app exploring modifications to Editor.js. The following pac
 
 - `apps/web` A Next.js 13 website which renders the Editor.js blocks
 - `apps/editor` - A Vite app which runs Editor.js
+- `packages/editor-plugin` - Custom components for Editor.js
 - `packages/ui` - React UI components
 - `packages/tsconfig` - TypeScript config for development
 - `packages/eslint-config-custom` - ESLint config for development
