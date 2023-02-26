@@ -9,30 +9,11 @@
 </head>
 
 <body class="bg-indigo-100">
+  <!-- Render React App (if necessary) -->
   <div id="react"></div>
 
-  <div class="flex w-full justify-center">
-    <div>
-      <div class="my-6 flex w-full justify-between">
-        <h1 class="text-indigo-700 font-extrabold text-4xl mr-4">Editor.js Demo</h1>
-        <div>
-          <!-- <button
-            class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            Preview
-          </button> -->
-          <button id="save"
-            class="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            Save
-          </button>
-        </div>
-      </div>
-      <div class="bg-white shadow-lg rounded px-8 prose lg:prose-xl">
-        <!-- Render Editor here -->
-        <div id="editor"></div>
-      </div>
-
-    </div>
-    <script type="module" src="/src/main.tsx"></script>
+  <div id="container" class="flex w-full justify-center"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

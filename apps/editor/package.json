@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "pnpm with-env vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.26.5",
@@ -23,6 +24,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "autoprefixer": "^10.4.13",
+    "dotenv-cli": "^7.0.0",
     "eslint-config-custom": "workspace:*",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",

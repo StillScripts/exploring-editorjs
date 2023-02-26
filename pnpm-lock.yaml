@@ -28,6 +28,7 @@ importers:
       '@types/react-dom': ^18.0.10
       '@vitejs/plugin-react-swc': ^3.0.0
       autoprefixer: ^10.4.13
+      dotenv-cli: ^7.0.0
       eslint-config-custom: workspace:*
       postcss: ^8.4.20
       react: ^18.2.0
@@ -49,6 +50,7 @@ importers:
       '@types/react-dom': 18.0.11
       '@vitejs/plugin-react-swc': 3.2.0_vite@4.1.4
       autoprefixer: 10.4.13_postcss@8.4.21
+      dotenv-cli: 7.0.0
       eslint-config-custom: link:../../packages/eslint-config-custom
       postcss: 8.4.21
       tailwindcss: 3.2.4_postcss@8.4.21

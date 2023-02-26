@@ -21,8 +21,6 @@ const CARD_CONTENT: ComponentProps<typeof Card>[] = [
 ]
 
 async function getData() {
-  const hey = env.X_MASTER_KEY
-  console.log(hey)
   const response = await fetch(
     `https://api.jsonbin.io/v3/b/${env.JSONBIN_ID}/latest`,
     {
