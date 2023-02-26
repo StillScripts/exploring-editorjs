@@ -20,6 +20,8 @@
     "CI",
     "X_MASTER_KEY",
     "JSONBIN_ID",
+    "VITE_X_MASTER_KEY",
+    "VITE_JSONBIN_ID",
     "NODE_ENV",
     "SKIP_ENV_VALIDATION",
     "VERCEL",
