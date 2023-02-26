@@ -14,7 +14,7 @@ export default async function Layout({
     {
       text: "All",
     },
-    ...category.items.map((x) => ({
+    ...category.items.map((x: { name: string; slug: string }) => ({
       text: x.name,
       slug: x.slug,
     })),
