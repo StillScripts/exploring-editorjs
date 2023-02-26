@@ -42,3 +42,5 @@ export const Preview: React.FC<{ blocks: OutputBlockData[] }> = ({
     </div>
   )
 }
+
+export type { OutputBlockData }

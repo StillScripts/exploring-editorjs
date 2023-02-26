@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 // tailwind config is required for editor support
 
-module.exports = require("tailwind-config/tailwind.config.cjs")
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const sharedConfig = require("tailwind-config/tailwind.config.cjs")
+
+module.exports = {
+  ...sharedConfig,
+  plugins: [require("@tailwindcss/typography")],
+}
